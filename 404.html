@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+  <meta name="robots" content="noindex,follow">
+  <title>Page Not Found — Kabastro</title>
+  <meta name="description" content="The page you're looking for could not be found. Search Kabastro and Kabala to discover helpful content and tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#101512;--panel:#171f1a;--text:#f4f3ec;--muted:#aab4aa;--line:rgba(255,255,255,.12);--lime:#c4e59a;--max:1080px}
+    *{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(ellipse at 50% 38%,rgba(126,161,102,.16),transparent 48%),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}a{color:inherit;text-decoration:none}.brand{font:800 25px Manrope,sans-serif;letter-spacing:-1.2px}.brand span{color:var(--lime)}.home-link{display:inline-flex;align-items:center;gap:8px;color:var(--lime);font-size:14px;font-weight:700}.main{flex:1;display:grid;place-items:center;padding:70px 0 90px}.content{width:min(100%,720px);text-align:center}.code{font:800 clamp(100px,22vw,190px)/.95 Manrope,sans-serif;letter-spacing:-.09em;color:rgba(196,229,154,.17);margin:0 0 20px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:25px;height:1px;background:var(--lime)}h1{font:700 clamp(30px,5vw,46px)/1.15 Manrope,sans-serif;letter-spacing:-1.3px;margin:15px 0}.intro{max-width:550px;margin:0 auto;color:var(--muted);font-size:16px}.search-box{margin:34px auto 0;padding:22px;border:1px solid var(--line);border-radius:20px;background:rgba(23,31,26,.88);text-align:left;box-shadow:0 22px 70px rgba(0,0,0,.18)}.search-box label{display:block;margin:0 0 11px;font-size:13px;font-weight:700;color:#e7eee4}.search-row{display:flex;gap:10px}.search-row input{min-width:0;flex:1;padding:15px 16px;border:1px solid rgba(255,255,255,.17);border-radius:11px;background:#101712;color:var(--text);font:inherit;outline:none}.search-row input:focus{border-color:var(--lime);box-shadow:0 0 0 3px rgba(196,229,154,.12)}.search-row input::placeholder{color:#778378}.search-row button{border:0;border-radius:11px;padding:0 22px;background:var(--lime);color:#172017;font:700 14px 'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;transition:.2s}.search-row button:hover{background:#d8f2b5;transform:translateY(-1px)}.search-hint{margin:12px 0 0;color:#839084;font-size:11px;line-height:1.5}.quick-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:27px;color:#b7c2b6;font-size:13px}.quick-links a:hover{color:var(--lime)}.footer{padding:22px 0;border-top:1px solid var(--line);color:#7f8b80;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:560px){.wrap{width:calc(100% - 34px)}.topbar{height:70px}.main{padding:45px 0 65px}.search-box{padding:17px}.search-row{flex-direction:column}.search-row button{min-height:48px}.quick-links{gap:13px}.footer-inner{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="/" aria-label="Kabastro home">KABA<span>STRO</span></a>
+    <a class="home-link" href="/">Back to homepage <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main class="main">
+    <div class="wrap content">
+      <p class="code" aria-hidden="true">404</p>
+      <div class="eyebrow">Page not found</div>
+      <h1>This path hasn't been discovered yet.</h1>
+      <p class="intro">The page may have moved, the link may be outdated, or the address may be incorrect. Search across Kabastro and Kabala to find what you're looking for.</p>
+
+      <form class="search-box" id="siteSearch" action="https://www.google.com/search" method="get" role="search">
+        <label for="keywords">Search Kabastro &amp; Kabala</label>
+        <div class="search-row">
+          <input id="keywords" name="keywords" type="search" placeholder="What are you looking for?" autocomplete="off" required>
+          <button type="submit">Search <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="search-hint">Search results are powered by Google and limited to kabastro.com and kabala.vn.</p>
+      </form>
+
+      <nav class="quick-links" aria-label="Helpful links">
+        <a href="/">Homepage</a>
+        <a href="/app/">Explore applications</a>
+        <a href="/blog/">Insights</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner"><span>© <span id="year"></span> Kabastro. All rights reserved.</span><span>Explore with curiosity. Choose with awareness.</span></div>
+  </footer>
+
+  <script>
+    (() => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('siteSearch').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const keywords = document.getElementById('keywords').value.trim();
+        if (!keywords) return;
+        const query = `(site:kabastro.com OR site:kabala.vn) ${keywords}`;
+        const url = new URL('https://www.google.com/search');
+        url.searchParams.set('q', query);
+        url.searchParams.set('hl', 'en');
+        window.location.href = url.toString();
+      });
+    })();
+  </script>
+</body>
+</html>
