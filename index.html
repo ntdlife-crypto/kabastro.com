@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+  <title>Kabastro — Understand Yourself. Live Meaningfully.</title>
+  <meta name="description" content="Explore self-discovery, astrology, numerology, ancient wisdom and practical tools for a more conscious and meaningful life with Kabastro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#101512;--panel:#171f1a;--panel2:#1d2821;--text:#f4f3ec;--muted:#aab4aa;--line:rgba(255,255,255,.11);--lime:#c4e59a;--lime2:#a8d47b;--gold:#d8c28d;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.topbar{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:800 25px Manrope,sans-serif;letter-spacing:-1.2px}.brand span{color:var(--lime)}.nav{display:flex;align-items:center;gap:30px;color:#d2d9d1;font-size:14px}.nav a:hover{color:var(--lime)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:700;font-size:14px;transition:.2s}.nav-cta,.btn-primary{background:var(--lime);color:#172017}.nav-cta:hover,.btn-primary:hover{background:#d8f2b5;transform:translateY(-2px)}.menu-btn{display:none;background:none;color:white;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+    .hero{position:relative;overflow:hidden;padding:112px 0 100px;background:radial-gradient(ellipse at 78% 42%,rgba(126,161,102,.18),transparent 37%),radial-gradient(ellipse at 18% 10%,rgba(195,220,155,.08),transparent 35%)}.hero:after{content:"";position:absolute;width:510px;height:510px;border:1px solid rgba(196,229,154,.13);border-radius:50%;right:-90px;top:10px;box-shadow:0 0 0 55px rgba(196,229,154,.025),0 0 0 110px rgba(196,229,154,.018);pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:25px;height:1px;background:var(--lime)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-1.4px}h1{font-size:clamp(44px,6.5vw,76px);max-width:760px;margin:22px 0}.hero h1 em{font-style:normal;color:var(--lime)}.hero-copy{font-size:18px;color:#c1cbc0;max-width:610px;line-height:1.8}.hero-actions{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}.btn{padding:15px 23px}.btn-outline{border:1px solid rgba(255,255,255,.25);color:var(--text)}.btn-outline:hover{border-color:var(--lime);color:var(--lime)}.hero-note{margin-top:55px;color:#879489;font-size:12px;letter-spacing:.5px}
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}.trust-inner{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;color:#b9c2b8;font-size:13px}.trust strong{color:var(--lime);font-weight:600}
+    section{padding:100px 0}.section-head{max-width:690px;margin-bottom:42px}.section-head h2{font-size:clamp(32px,4.5vw,48px);margin:15px 0}.section-head p{color:var(--muted);font-size:16px;margin:0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-art{min-height:390px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#26372b,#131b16 70%);position:relative;display:grid;place-items:center;overflow:hidden}.orbit{width:245px;height:245px;border:1px solid rgba(196,229,154,.5);border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 70px rgba(196,229,154,.08)}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(196,229,154,.2);border-radius:50%;inset:28px}.orbit:after{inset:-28px}.orbit-core{width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e2f4c3,#8cac6d 60%,#526d47);box-shadow:0 0 55px rgba(196,229,154,.25)}.orbit-label{position:absolute;color:#d8e6cb;font-size:11px;letter-spacing:2px;text-transform:uppercase}.orbit-label.one{top:32px;left:38px}.orbit-label.two{right:25px;bottom:48px}.intro-copy h2{font-size:clamp(32px,4vw,46px);margin:15px 0 22px}.intro-copy p{color:var(--muted);margin:0 0 18px}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.principle{padding:19px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.principle b{display:block;color:var(--lime);font:700 15px Manrope;margin-bottom:6px}.principle span{font-size:12px;color:var(--muted)}
+    .apps-section{background:#141b16;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.apps-top{display:flex;justify-content:space-between;align-items:end;gap:25px}.apps-top .section-head{margin-bottom:0}.app-count{color:var(--muted);font-size:13px;white-space:nowrap}.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.app-card{display:flex;flex-direction:column;min-height:205px;padding:25px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));transition:.22s}.app-card:hover{transform:translateY(-4px);border-color:rgba(196,229,154,.55);background:linear-gradient(145deg,rgba(196,229,154,.09),rgba(255,255,255,.02))}.app-icon{width:42px;height:42px;border:1px solid rgba(196,229,154,.35);border-radius:13px;display:grid;place-items:center;color:var(--lime);font-size:18px;margin-bottom:22px}.app-card h3{font-size:19px;letter-spacing:-.4px;margin:0 0 9px}.app-card p{color:var(--muted);font-size:13px;margin:0 0 20px}.app-link{color:var(--lime);font-size:13px;font-weight:700;margin-top:auto}.app-loading,.app-empty{grid-column:1/-1;padding:25px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);text-align:center}.app-error{color:#e6b4a9}
+    .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pillar{padding:25px 22px;border-top:1px solid var(--lime);background:linear-gradient(180deg,rgba(196,229,154,.06),transparent);min-height:220px}.pillar-num{color:var(--lime);font:700 12px Manrope;letter-spacing:1px}.pillar h3{font-size:20px;margin:25px 0 12px;letter-spacing:-.5px}.pillar p{font-size:13px;color:var(--muted);margin:0}
+    .journey{background:linear-gradient(120deg,#202d22,#151d17);border-block:1px solid var(--line)}.journey-inner{display:flex;justify-content:space-between;align-items:center;gap:40px}.journey h2{font-size:clamp(32px,4.5vw,48px);max-width:640px;margin:14px 0}.journey p{color:#b5c0b4;max-width:610px}.journey .btn{white-space:nowrap}
+    .disclaimer{font-size:12px;color:#829084;max-width:850px;margin-top:30px}.footer{padding:55px 0 30px}.footer-main{display:flex;justify-content:space-between;gap:35px;padding-bottom:38px;border-bottom:1px solid var(--line)}.footer-about{max-width:410px}.footer-about p{font-size:13px;color:var(--muted)}.footer-links{display:flex;gap:65px}.footer-links div{display:flex;flex-direction:column;gap:10px;font-size:13px;color:var(--muted)}.footer-links b{color:var(--text);margin-bottom:5px}.copyright{padding-top:22px;color:#78847a;font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){.nav{display:none;position:absolute;z-index:10;top:82px;left:0;right:0;padding:20px 24px 25px;background:#141b16;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.nav.open{display:flex}.menu-btn{display:block}.topbar>.nav-cta{display:none}.hero{padding:85px 0 75px}.hero:after{right:-300px}.intro-grid{grid-template-columns:1fr;gap:35px}.intro-art{min-height:300px}.app-grid{grid-template-columns:repeat(2,1fr)}.pillars{grid-template-columns:repeat(2,1fr)}.journey-inner{align-items:flex-start;flex-direction:column}.footer-main{flex-direction:column}.footer-links{gap:40px}}
+    @media(max-width:520px){.wrap{width:min(100% - 34px,var(--max))}.hero-copy{font-size:16px}.trust-inner{display:grid;grid-template-columns:1fr 1fr}.app-grid{grid-template-columns:1fr}.app-card{min-height:175px}.pillars{grid-template-columns:1fr 1fr;gap:8px}.pillar{padding:18px 14px;min-height:205px}.principles{grid-template-columns:1fr}.section-head{margin-bottom:30px}section{padding:75px 0}.footer-links{gap:25px}.footer-links div{min-width:120px}}
+  </style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="/" aria-label="Kabastro home">KABA<span>STRO</span></a>
+  <nav class="nav" id="mainNav" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#explore">Explore</a><a href="#philosophy">Our Approach</a><a href="/blog/">Insights</a><a href="mailto:hello@kabastro.com">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#explore">Explore Kabastro <span aria-hidden="true">↗</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">A journey inward</div>
+      <h1>Understand yourself.<br><em>Live a meaningful life.</em></h1>
+      <p class="hero-copy">Discover the patterns that shape who you are. Explore ancient wisdom, modern perspectives and thoughtful tools to understand yourself more deeply and make more conscious choices.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#explore">Explore our tools <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#about">Discover our philosophy</a></div>
+      <div class="hero-note">SELF-DISCOVERY &nbsp;·&nbsp; ANCIENT WISDOM &nbsp;·&nbsp; PERSONAL GROWTH</div>
+    </div>
+  </section>
+
+  <div class="trust"><div class="wrap trust-inner"><span><strong>Explore</strong> different perspectives</span><span><strong>Reflect</strong> with an open mind</span><span><strong>Choose</strong> your own direction</span><span><strong>Grow</strong> through experience</span></div></div>
+
+  <section id="about">
+    <div class="wrap intro-grid">
+      <div class="intro-art" aria-hidden="true"><span class="orbit-label one">Self awareness</span><span class="orbit-label two">Inner clarity</span><div class="orbit"><div class="orbit-core"></div></div></div>
+      <div class="intro-copy">
+        <div class="eyebrow">The idea behind Kabastro</div>
+        <h2>A clearer understanding of yourself can change the way you live.</h2>
+        <p>Who am I? What truly matters to me? Why do I think, feel and act the way I do? These questions are at the heart of a meaningful life.</p>
+        <p>Kabastro brings together perspectives from astrology, numerology, philosophy and other knowledge traditions with accessible digital experiences. Use them as starting points for reflection — not as fixed definitions of who you are.</p>
+        <div class="principles"><div class="principle"><b>Understand</b><span>Recognize your patterns and possibilities.</span></div><div class="principle"><b>Reflect</b><span>Look beyond assumptions and expectations.</span></div><div class="principle"><b>Live</b><span>Make choices with greater awareness.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apps-section" id="explore">
+    <div class="wrap">
+      <div class="apps-top"><div class="section-head"><div class="eyebrow">Explore the platform</div><h2>Tools for your journey of discovery.</h2><p>Explore digital experiences designed to help you learn, reflect and discover new perspectives. New applications appear here automatically as they are added to the app directory.</p></div><div class="app-count" id="appCount" aria-live="polite">Discover our applications</div></div>
+      <div class="app-grid" id="appGrid"><div class="app-loading">Loading applications…</div></div>
+    </div>
+  </section>
+
+  <section id="philosophy">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">A thoughtful approach</div><h2>Knowledge is a mirror, not a verdict.</h2><p>We believe that every system of knowledge can offer a perspective. Its value comes from how thoughtfully we examine it and how responsibly we apply what we learn.</p></div>
+      <div class="pillars">
+        <article class="pillar"><div class="pillar-num">01 / AWARENESS</div><h3>Know yourself</h3><p>Explore your personality, motivations, strengths and challenges with curiosity.</p></article>
+        <article class="pillar"><div class="pillar-num">02 / PERSPECTIVE</div><h3>Stay open-minded</h3><p>Bring different traditions and viewpoints together without relying on a single answer.</p></article>
+        <article class="pillar"><div class="pillar-num">03 / DISCERNMENT</div><h3>Think independently</h3><p>Question, compare and test ideas against reason, evidence and lived experience.</p></article>
+        <article class="pillar"><div class="pillar-num">04 / PURPOSE</div><h3>Live consciously</h3><p>Turn reflection into meaningful choices, relationships and everyday actions.</p></article>
+      </div>
+      <p class="disclaimer">Kabastro's content and tools are intended for education, reflection and personal exploration. Astrological, numerological and other traditional interpretations are not scientific diagnoses or guaranteed predictions. They should not replace professional advice or be the sole basis for important life decisions.</p>
+    </div>
+  </section>
+
+  <section class="journey"><div class="wrap journey-inner"><div><div class="eyebrow">Your journey starts here</div><h2>There is more than one way to understand yourself.</h2><p>Take a first step, explore a new perspective and keep what genuinely helps you live with greater clarity and purpose.</p></div><a class="btn btn-primary" href="#explore">Find your starting point <span aria-hidden="true">↗</span></a></div></section>
+</main>
+
+<footer class="footer"><div class="wrap"><div class="footer-main"><div class="footer-about"><a class="brand" href="/">KABA<span>STRO</span></a><p>Tools, knowledge and perspectives for self-understanding and a more meaningful life.</p><a href="mailto:hello@kabastro.com" style="color:var(--lime);font-size:13px">hello@kabastro.com</a></div><div class="footer-links"><div><b>Explore</b><a href="#explore">Applications</a><a href="/blog/">Insights</a><a href="#philosophy">Our approach</a></div><div><b>Connect</b><a href="mailto:hello@kabastro.com">Contact</a><a href="https://www.facebook.com/kabastro.offical/" target="_blank" rel="noopener">Facebook</a></div></div></div><div class="copyright"><span>© <span id="year"></span> Kabastro. All rights reserved.</span><span>Explore with curiosity. Choose with awareness.</span></div></div></footer>
+
+<script>
+(() => {
+  const grid = document.getElementById('appGrid');
+  const count = document.getElementById('appCount');
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('mainNav');
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Read the public directory index generated by the web server at /app/.
+  // No PHP or backend API is used. The server must allow directory listing.
+  fetch('/app/', { headers: { 'Accept': 'text/html' } })
+    .then(response => {
+      if (!response.ok) throw new Error('Directory listing is unavailable.');
+      return response.text();
+    })
+    .then(markup => {
+      const doc = new DOMParser().parseFromString(markup, 'text/html');
+      const folders = new Map();
+      const currentPath = new URL('/app/', window.location.origin);
+
+      doc.querySelectorAll('a[href]').forEach(anchor => {
+        const rawHref = anchor.getAttribute('href');
+        if (!rawHref || rawHref.startsWith('?') || rawHref.startsWith('#')) return;
+        let url;
+        try { url = new URL(rawHref, currentPath); } catch (_) { return; }
+        if (url.origin !== window.location.origin) return;
+
+        const relative = decodeURIComponent(url.pathname).replace(/^\/app\//, '');
+        const parts = relative.split('/').filter(Boolean);
+        if (parts.length !== 1 || url.pathname === '/app/' || !url.pathname.endsWith('/')) return;
+        const slug = parts[0];
+        if (!/^[a-zA-Z0-9_-]+$/.test(slug) || slug.startsWith('.')) return;
+        folders.set(slug, `/app/${encodeURIComponent(slug)}/`);
+      });
+
+      const apps = [...folders.entries()]
+        .map(([slug, url]) => ({ slug, url, name: 'Kabastro ' + slug.split(/[-_]+/).filter(Boolean).map(word => word.toUpperCase() === word ? word : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ') }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+      grid.replaceChildren();
+      if (!apps.length) {
+        grid.innerHTML = '<div class="app-empty">No applications found. Add application folders inside <code>/app</code> to display them here.</div>';
+        count.textContent = '0 applications';
+        return;
+      }
+
+      count.textContent = `${apps.length} ${apps.length === 1 ? 'application' : 'applications'}`;
+      apps.forEach((app, index) => {
+        const card = document.createElement('a');
+        card.className = 'app-card';
+        card.href = app.url;
+        const icon = document.createElement('div');
+        icon.className = 'app-icon';
+        icon.setAttribute('aria-hidden', 'true');
+        icon.textContent = ['✧', '◈', '◎', '✳', '⌘', '◇'][index % 6];
+        const title = document.createElement('h3');
+        title.textContent = app.name;
+        const description = document.createElement('p');
+        description.textContent = `Explore ${app.name.replace(/^Kabastro\s*/, '')} through an interactive experience for learning and self-discovery.`;
+        const link = document.createElement('span');
+        link.className = 'app-link';
+        link.textContent = 'Explore application →';
+        card.append(icon, title, description, link);
+        grid.appendChild(card);
+      });
+    })
+    .catch(() => {
+      grid.innerHTML = '<div class="app-empty app-error">The application directory could not be read. Enable directory listing (autoindex) for <code>/app/</code> on your web server, or provide a public directory index.</div>';
+      count.textContent = 'Applications unavailable';
+    });
+})();
+</script>
+</body>
+</html>
